@@ -78,7 +78,4 @@ theme: trilhas
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/institutotrilhas/institutotrilhas.org.br.git
-  branch: master
-  message: 
+  type: 
