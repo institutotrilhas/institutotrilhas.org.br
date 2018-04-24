@@ -56,19 +56,44 @@ header {
 }
 
 .grid .home-posts {
+    padding: 4vh 5vw;
     grid-row: span 2;
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-items: flex-start;
 }
 
 .home-posts h1{
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
+    margin-bottom: 0;
+    width: 100%;
+    font-family: 'Antic Slab', serif;
+    font-weight: 400;
     font-size: 5vh;
-    color: rgba(120, 130, 150, 0.3);
+    color: rgb(120, 130, 150);
+}
+
+.home-posts img {
+    margin: 0;
+    height: 58vh;
     align-self: center;
 }
 
+.home-posts p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.7vh;
+    color:  rgb(120, 130, 150);
+}
+
+.home-posts a {
+    text-decoration: none;
+    color: rgb(80, 175, 110);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.home-posts a:hover {
+    color: rgb(200, 85, 100);
+}
 
 .grid .home-sobre {
     background: linear-gradient(rgba(120, 130, 150, 0.6 ), rgba(120, 130, 150, 0.6 )), url('images/aaron-burden-236415_filtro.jpg') center no-repeat;
@@ -544,8 +569,12 @@ footer p {
         margin-right: 10vw;
     }
     .home-posts {
-        height: 60vh;
-        text-align: center;
+        display: block;
+        box-sizing: border-box;
+    }
+    .home-posts img {
+        width: 100%;
+        height: unset;
     }
     .home-sobre {
         height: 30vh;
@@ -605,6 +634,12 @@ footer p {
     }
     .home-sobre {
         height: 36vh;
+    }
+    .home-posts h1 {
+        margin-top: 0;
+    }
+    .home-posts p {
+        font-size: 2vh;
     }
     .trilheiros img {
         width: 40vw;
