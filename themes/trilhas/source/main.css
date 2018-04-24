@@ -342,6 +342,9 @@ header {
 .trl-card p {
     font-family: 'PT Sans', sans-serif;
 }
+.trl-ic {
+    display: none;
+}
 /* Contato */
 .contato-topo {
     margin: 0;
@@ -463,4 +466,139 @@ footer p {
     color: rgb(235, 255, 235);
     margin-left: 5vw;
     
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:1400px) {
+    .site-nav ul {
+        font-size: 2vh;
+    }
+    footer p {
+        font-size: 1.5vh;
+    }
+    .qs-img {
+        width: 35vw;
+    }
+    .trl-card {
+        grid-column: span 2;
+    }
+    .trl-ic{
+        display: inline;
+        grid-column: span 2;
+    }
+    .trl-ib {
+        grid-column: span 2;
+    }
+    .trl-ia {
+        display: none;
+    }
+    .contato h2 {
+        font-size: 4.2vh;
+    }
+    .contato p {
+        font-size: 2.2vh;
+    }
+    .contato form input {
+        font-size: 2vh;
+        width: 40vw;
+    }
+    .contato form textarea {
+        font-size: 2vh;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 18vw;
+    }
+    .grid {
+        grid-template-columns: 60vw 40vw;
+    }
+    .home-posts {
+        grid-column: span 2;
+    }
+    .contato form input {
+        width: 50vw;
+    }
+    .contato form textarea {
+        width: 50vw;
+    }
+    .contato form button {
+        width: 10vw;
+        height: 6vh;
+    }
+}
+@media (max-width: 768px) {
+    .grid {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .logo {
+        width: 30vw;
+        margin-left: 10vw;
+    }
+    .site-nav ul {
+        margin-right: 10vw;
+    }
+    .home-posts {
+        height: 60vh;
+        text-align: center;
+    }
+    .home-sobre {
+        height: 30vh;
+    }
+    .home-contato {
+        height: 20vh;
+    }
+    .sobre-conteudo {
+        margin: 8vh 10vw;
+    }
+    .quem-somos {
+        flex-flow: column wrap;
+    }
+    .qs-texto {
+        width: 100%;
+    }
+    .qs-img {
+        margin-top: 2vh;
+        align-self: center;
+    }
+    .atividades h2 {
+        content: "atividades";
+    }
+    .at-col {
+        grid-column: span 2;
+    }
+    .trl-card {
+        grid-column: span 4;
+    }
+    .contato {
+        margin: 8vh 10vw;
+    }
+    .contato form input {
+        width: 100%;
+    }
+    .contato form textarea {
+        width: 100%;
+    }
+    .contato form button {
+        width: 20vw;
+        height: 6vh;
+    }
+}
+@media (max-width: 640px) {
+    .logo {
+        width: 35vw;
+    }
+    .site-nav ul {
+        margin-top: 1vh;
+        font-size: 2.8vw;
+    }
+    .home-sobre {
+        height: 36vh;
+    }
 }
