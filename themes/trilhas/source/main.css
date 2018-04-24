@@ -320,11 +320,15 @@ header {
 }
 
 .trilheiros img {
+    margin-top: 2vh;
     width: 10vw;
-    justify-self: center;
+    border-radius: 50%;
+    align-self: center;
 }
 
 .trl-card {
+    display: flex;
+    flex-flow: column wrap;
     margin-top: 1vh;
     background-color: rgb(80, 175, 110);
     border: 1px solid rgb(120, 130, 150);
@@ -337,14 +341,13 @@ header {
     font-family: 'Antic Slab', serif;
     font-weight: 400;
     font-size: 3.5vh;
+    align-self: center;
 }
 
 .trl-card p {
     font-family: 'PT Sans', sans-serif;
 }
-.trl-ic {
-    display: none;
-}
+
 /* Contato */
 .contato-topo {
     margin: 0;
@@ -485,15 +488,11 @@ footer p {
     .trl-card {
         grid-column: span 2;
     }
-    .trl-ic{
-        display: inline;
-        grid-column: span 2;
+    .trl-card h3 {
+        font-size: 5vh;
     }
-    .trl-ib {
-        grid-column: span 2;
-    }
-    .trl-ia {
-        display: none;
+    .trilheiros img {
+        width: 20vw;   
     }
     .contato h2 {
         font-size: 4.2vh;
@@ -576,6 +575,12 @@ footer p {
     .trl-card {
         grid-column: span 4;
     }
+    .trl-card p {
+        font-size: 2vh;
+    }
+    .trilheiros img {
+        width: 30vw;   
+    }
     .contato {
         margin: 8vh 10vw;
     }
@@ -600,5 +605,14 @@ footer p {
     }
     .home-sobre {
         height: 36vh;
+    }
+    .trilheiros img {
+        width: 40vw;
+    }
+    .trl-card h3 {
+        font-size: 4.5vh;
+    }
+    .trl-card p {
+        font-size: 2.2vh;
     }
 }
