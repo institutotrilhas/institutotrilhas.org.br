@@ -1,0 +1,10 @@
+.menu-lateral {
+    float: right; 
+    margin-right: 5vw; 
+    margin-top: 5vh; 
+    padding: 0;
+}
+
+.menu-lateral ul {
+    margin: 0;
+}

@@ -1,9 +1,0 @@
-<% site.posts.forEach(function(post){ %>
-    <div>
-        <h4><%- post.title %></h4>
-        <p><%- truncate(post.content, {length: 300, separator: ' '}) %></p>
-        <a href="<%- url_for(post.path) %>">
-            <button>leia +</button>
-        </a>
-    </div>
-<% }) %>
