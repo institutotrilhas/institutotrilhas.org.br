@@ -1,8 +1,22 @@
 <div class="grid">
     <div class="home-posts">
-        <h1>Próximos eventos</h1>
-        <img src="/images/evento1.jpg">
-        <p>Para maiores informações <a target="_blank" href="https://www.sescsp.org.br/programacao/151016_PETALA+POR+PETALA+2018#/content=programacao">clique aqui</a>.</p>
+        <% site.posts.reverse().some(function(post){ %>
+            <div class="hpimg">
+                <img src="<%- url_for(post.imagem.replace("./", post.path)) %>">
+            </div>
+            <div class="topo-alt">
+                <small>Foto: <%- post.alt %></small>
+            </div>
+            <div class="hpcontent">
+                <h1><%- post.title %></h1>
+                <small><%- date(post.date) %></small>
+                <p><%- truncate(post.content, {length: 340, separator: ' '}) %></p>
+                <a href="<%- url_for(post.path) %>">
+                    <button>leia +</button>
+                </a>
+            </div>
+        <% return post.title === "Trilha no Parque Alfredo Volpi"; %>
+        <% }) %>
     </div>
     <div class="home-sobre">
         <p>Somos o INSTITUTO TRILHAS! Uma organização sem fins lucrativos e multidisciplinar. Buscamos levar à sociedade ações de educação, formação e sensibilização no campo da educação socioambiental.</p>

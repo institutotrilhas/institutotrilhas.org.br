@@ -70,14 +70,39 @@
 .post-topo img {
     width: 100%;
 }
-
+.topo-alt {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 2vw;
+    display: grid;
+    justify-items: end;
+    margin-top: -2.5vh;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 2px 2px black;
+}
+.post-conteudo a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--verde);
+}
 .post-conteudo {
     width: 60vw;
-    margin: 5vh 5vw;
+    margin: 7.5vh 5vw 5vh 5vw;
     font-family: 'PT Sans', sans-serif;
     color: rgb(120, 130, 150);
+    
 }
 
+.post-texto img {
+    width: 40vw;
+    margin-top: 3vh;
+    margin-bottom: -2vh;
+    border: 1px solid var(--verde);
+    border-radius: 2.5px;
+    padding: 5px;
+    justify-self: center;
+}
 .post-conteudo h1 {
     margin-bottom: 0;
     font-family: 'Antic Slab', serif;
@@ -94,6 +119,14 @@
     margin-top: 5vh;
     line-height: 1.5;
     font-size: 1.7vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.post-texto .cred {
+    width: 100%;
+    font-size: 1.2vh;
+    margin-left: 37%;
 }
 
 
@@ -109,5 +142,21 @@
     }
     .post-conteudo {
         width: 89vw;
+    }
+    .post-texto img {
+        width: 100%;
+    }
+    .post-texto .cred {
+        font-size: 1.5vh;
+        margin-left: 22%;
+    }
+}
+@media (max-width: 640px){ 
+    .post-texto .cred {
+        font-size: 1.5vh;
+        margin-left: 15%;
+    }
+    .topo-alt small {
+        font-size: 1.8vh;
     }
 }
