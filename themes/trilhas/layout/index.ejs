@@ -1,6 +1,6 @@
 <div class="grid">
     <div class="home-posts">
-        <% site.posts.reverse().some(function(post){ %>
+        <% site.posts.some(function(post){ %>
             <div class="hpimg">
                 <img src="<%- url_for(post.imagem.replace("./", post.path)) %>">
             </div>
@@ -10,12 +10,12 @@
             <div class="hpcontent">
                 <h1><%- post.title %></h1>
                 <small><%- date(post.date) %></small>
-                <p><%- truncate(post.content, {length: 340, separator: ' '}) %></p>
+                <p><%- truncate(post.content, {length: 300, separator: ' '}) %></p>
                 <a href="<%- url_for(post.path) %>">
                     <button>leia +</button>
                 </a>
             </div>
-        <% return post.title === "Trilha no Parque Alfredo Volpi"; %>
+        <% return post.title === "Curso de formação de monitores socioambientais – SESC Araraquara"; %>
         <% }) %>
     </div>
     <div class="home-sobre">
