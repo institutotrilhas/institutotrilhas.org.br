@@ -69,6 +69,7 @@
 
 .post-topo img {
     width: 100%;
+    transform: translateY(200px);
 }
 .topo-alt {
     box-sizing: border-box;
