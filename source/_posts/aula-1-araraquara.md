@@ -1,9 +1,10 @@
 ---
 title: Curso de capacitação em monitoria de trilhas - relato da aula 1
 date: 2018-06-14 14:24:24
-tags:
+tags: 
 imagem: ./img01.jpg
 alt: Instituto Trilhas
+chave: aula1
 ---
 Neste sábado (9/06) começou o curso Trilheiros do Córrego Tanquinho, que tem como objetivo capacitar pessoas a desenvolver e monitorar trilhas socioambientais. O curso está acontecendo em Araraquara e tem como espaço pedagógico às margens do Córrego Tanquinho, uma APP (Área de Preservação Permanente) que já era protegida por lei contra interferências humanas, e que em breve se tornará um parque para a população de Araraquara desfrutar.
 
