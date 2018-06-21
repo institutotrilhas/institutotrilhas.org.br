@@ -4,7 +4,7 @@ date: 2018-06-21 18:43:13
 tags:
 imagem: ./img01.jpg
 alt: Instituto Trilhas
-chave: 20180621
+chave: "20180621"
 ---
 Em continuidade ao curso Trilheiros do Córrego Tanquinho, promovido pelo Sesc Araraquara e desenvolvido por nós, Instituto Trilhas, a segunda aula (16/06) foi muito produtiva e cheia de aprendizado.  O foco da aula foi abordar temas pertinentes em uma trilha socioambiental, afinal a APP (Área de Preservação Permanente) do córrego Tanquinho é um espaço rico, com enorme potencial pedagógico, permitindo explorar outros assuntos além da biologia do local, que seria uma abordagem mais óbvia.
 
