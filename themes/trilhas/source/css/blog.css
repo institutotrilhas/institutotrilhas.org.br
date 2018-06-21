@@ -69,7 +69,12 @@
 
 .post-topo img {
     width: 100%;
-    transform: translateY(200px);
+    transform: translateY(12vh);
+}
+@media (max-width: 768px) {
+    .post-topo img {
+        transform: translateY(0);
+    }
 }
 .topo-alt {
     box-sizing: border-box;

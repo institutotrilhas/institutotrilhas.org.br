@@ -10,12 +10,12 @@
             <div class="hpcontent">
                 <h1><%- post.title %></h1>
                 <small><%- date(post.date) %></small>
-                <p><%- truncate(post.content, {length: 320, separator: ' '}) %></p>
+                <p><%- truncate(post.content, {length: 340, separator: ' '}) %></p>
                 <a href="<%- url_for(post.path) %>">
                     <button>leia +</button>
                 </a>
             </div>
-        <% return post.chave === "aula1"; %>
+        <% return post.chave === "aula2"; %>
         <% }) %>
     </div>
     <div class="home-sobre">
