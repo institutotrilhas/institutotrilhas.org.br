@@ -1,6 +1,6 @@
 <div class="grid">
     <div class="home-posts">
-        <% site.posts.some.(function(post){ %>
+        <% site.posts.find(function(post){ %>
             <div class="hpimg">
                 <img src="<%- url_for(post.imagem.replace("./", post.path)) %>">
             </div>
@@ -15,7 +15,7 @@
                     <button>leia +</button>
                 </a>
             </div>
-        <% return post.chave === 20180711; %>
+        <% return post.chave === "20180711"; %>
         <% }) %>
     </div>
     <div class="home-sobre">
