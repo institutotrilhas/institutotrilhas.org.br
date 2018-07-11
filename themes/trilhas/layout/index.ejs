@@ -1,6 +1,6 @@
 <div class="grid">
     <div class="home-posts">
-        <% site.posts.reverse().some(function(post){ %>
+        <% site.posts.some(function(post){ %>
             <div class="hpimg">
                 <img src="<%- url_for(post.imagem.replace("./", post.path)) %>">
             </div>
@@ -15,7 +15,7 @@
                     <button>leia +</button>
                 </a>
             </div>
-        <% return post.ara === "a34"; %>
+        <% return post.ara === true; %>
         <% }) %>
     </div>
     <div class="home-sobre">
