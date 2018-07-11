@@ -69,7 +69,7 @@
 
 .post-topo img {
     width: 100%;
-    transform: translateY(12vh);
+    transform: translateY(-12vh);
 }
 @media (max-width: 768px) {
     .post-topo img {
