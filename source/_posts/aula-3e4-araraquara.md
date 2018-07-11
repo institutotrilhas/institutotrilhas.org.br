@@ -4,7 +4,7 @@ date: 2018-07-11 14:39:14
 tags:
 imagem: ./img01.jpg
 alt: Instituto Trilhas
-chave: 2a0180711
+chave: "2a0180711"
 ---
 No dia 23 tivemos duas aulas do curso Trilheiros do Córrego do Tanquinho. O dia começou com uma dinâmica em que todos juntos escreveram poemas para o Córrego Tanquinho. Não sabíamos que havia tantos artistas na sala!  
 
