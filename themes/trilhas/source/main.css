@@ -74,11 +74,11 @@ header {
 }
 
 .hpimg img {
-    transform: translateY(-35vh);
+    transform: translateY(-40vh);
 }
 @media (max-width: 768px) {
     .hpimg img {
-        transform: translateY(-10vh);
+        transform: translateY(0vh);
     }
 }
 
@@ -139,6 +139,10 @@ header {
     color: rgb(80, 175, 110);
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+.topo-alt {
+    z-index: 2;
 }
 
 .home-posts a:hover {
