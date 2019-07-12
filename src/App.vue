@@ -20,7 +20,21 @@
     </div>
     <router-view />
     <div id="footer">
-      <p>Todos os direitos reservados © Instituto Trilhas, 2019.</p>
+      <h3>contato</h3>
+      <div class="info">
+        <p>
+          <strong>contato@institutotrilhas.org.br</strong>
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/itrilhas">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/instituto.trilhas/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <p class="legenda">Todos os direitos reservados © Instituto Trilhas, 2019.</p>
     </div>
   </div>
 </template>
@@ -98,16 +112,38 @@ body {
   margin: 40px 0 0 0;
   height: 100%;
   padding: 10px 10px 10px 80px;
+  h3 {
+    font-family: "Antic", serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: #b4cf8b;
+    margin-bottom: 1vh;
+  }
+  i {
+    color: #b4cf8b;
+  }
   p {
+    margin-bottom: 5vh;
+    color: #fff;
+  }
+  .legenda {
+    margin-bottom: 0;
     color: #aaa;
     font-size: 12px;
+  }
+  .info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.2em;
+    i {
+      font-size: 1.6em;
+      margin: 0 1.5vh;
+    }
   }
   position: sticky;
   top: 100vh;
 }
-</style>
-
-<style scoped>
 img {
   width: 300px;
 }
