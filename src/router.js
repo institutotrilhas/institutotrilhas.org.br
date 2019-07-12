@@ -18,7 +18,17 @@ export default new Router({
 			// route level code-splitting
 			// this generates a separate chunk (about.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import(/* webpackChunkName: "eventos" */ './views/Eventos.vue')
+			component: () => import(/* webpackChunkName: "eventos" */ './views/Eventos.vue'),
+			children: [
+				{
+					path: '',
+					component: () => import(/* webpackChunkName: "blog home" */ './components/EventosHome.vue')
+				},
+				{
+					path: ':uid',
+					component: () => import(/* webpackChunkName: "post" */ './components/Evento.vue')
+				}
+			]
 		},
 		{
 			path: '/blog/',

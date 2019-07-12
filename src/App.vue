@@ -14,7 +14,7 @@
         <router-link to="/">
           <span @click="rolarEquipe">equipe</span>
         </router-link>
-        <router-link to="/blog">eventos</router-link>
+        <router-link to="/eventos">eventos</router-link>
         <router-link to="/blog">blog</router-link>
       </div>
     </div>
