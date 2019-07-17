@@ -33,6 +33,13 @@
             <i class="fab fa-instagram"></i>
           </a>
         </div>
+        <div class="inscricao">
+          <p>receba nossas novidades!</p>
+          <form name="contato" action="POST" data-netlify="true">
+            <input type="email" name="email" placeholder="digite aqui seu email" />
+            <button type="submit">enviar</button>
+          </form>
+        </div>
       </div>
       <p class="legenda">Todos os direitos reservados © Instituto Trilhas, 2019.</p>
     </div>
@@ -143,6 +150,58 @@ body {
   }
   position: sticky;
   top: 100vh;
+  .inscricao {
+    p {
+      margin: 0 0;
+      font-weight: 400;
+      color: #b4cf8b;
+    }
+    form {
+      margin: 0;
+      button {
+        padding: 5px 10px;
+        margin-top: 0.5em;
+        margin-right: 6vw;
+        float: right;
+        border-radius: 15px;
+        border: 1px solid #aaa;
+        background-color: unset;
+        box-shadow: none;
+        font-family: "Antic", serif;
+        font-weight: 800;
+        color: #aaa;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          border-color: #b4cf8b;
+          color: #b4cf8b;
+        }
+      }
+      input {
+        padding: 5px 0;
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        margin: 0;
+        background-color: unset;
+        font-family: "PT Sans", sans-serif;
+        color: #f2eee8;
+        font-size: 0.8em;
+        &::placeholder {
+          font-family: "PT Sans", sans-serif;
+          color: #aaa;
+        }
+        &:focus {
+          border: none;
+          border-bottom: 1px solid #b4cf8b;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
 }
 img {
   width: 300px;
