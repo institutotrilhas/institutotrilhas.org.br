@@ -1,13 +1,13 @@
 <template>
   <div class="card" :key="index">
-    <img :src="fields.img" alt>
+    <img :src="fields.img" alt />
     <h3>{{ fields.nome }}</h3>
     <p :class="{ short: expandir }">{{ fields.descricao }}</p>
     <button @click="toggle">{{ expandir ? "mais" : "menos" }}</button>
   </div>
 </template>
 
-<style scoped>
+<style scoped style lang="scss">
 .card {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -18,6 +18,15 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin-bottom: 50px;
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "perfil"
+      "nome"
+      "descr"
+      "btn";
+    justify-items: center;
+  }
 }
 img {
   width: 100px;
@@ -36,6 +45,9 @@ h3 {
 p {
   margin-top: 0;
   grid-area: descr;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
 }
 button {
   font-family: "PT Sans", sans-serif;

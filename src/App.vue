@@ -5,7 +5,7 @@
     </div>
     <div id="nav">
       <router-link to="/">
-        <img src="./assets/logo_instituto.svg" alt />
+        <img src="./assets/logo_instituto.svg" class="logoit" alt />
       </router-link>
       <div class="menu">
         <!-- <router-link to="/">
@@ -66,6 +66,9 @@ export default {
 body {
   margin: 0;
   background-color: #f2eee8;
+  @media (max-width: 640px) {
+    width: 100vw;
+  }
 }
 
 #app {
@@ -104,6 +107,21 @@ body {
     &:hover {
       color: #2c3e50;
     }
+    @media (max-width: 640px) {
+      height: unset;
+      align-items: center;
+    }
+  }
+  @media (max-width: 640px) {
+    height: auto;
+    display: grid;
+    justify-content: center;
+    padding: 0;
+    .logoit {
+      width: 80vw;
+      margin: 2.5vh 0;
+      align-self: center;
+    }
   }
 }
 .menu {
@@ -112,6 +130,15 @@ body {
   float: right;
   a {
     margin: 0 20px;
+  }
+  @media (max-width: 640px) {
+    margin: 0 -10vw;
+    padding: 5vh 5vw;
+    float: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 #footer {
@@ -146,6 +173,9 @@ body {
     i {
       font-size: 1.6em;
       margin: 0 1.5vh;
+    }
+    @media (max-width: 640px) {
+      display: block;
     }
   }
   position: sticky;
@@ -200,6 +230,15 @@ body {
           outline: none;
         }
       }
+    }
+  }
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5vh 5vw;
+    .inscricao {
+      margin: 5vh 0;
     }
   }
 }

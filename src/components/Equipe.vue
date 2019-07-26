@@ -11,7 +11,7 @@
 </template>
 
 
-<style scoped>
+<style scoped <style lang="scss" scoped>
 #equipe {
   margin-top: 80px;
 }
@@ -22,6 +22,10 @@
   width: 640px;
   background-color: #fff;
   padding: 50px 50px 0 50px;
+  @media (max-width: 640px) {
+    width: 70vw;
+    padding: 5vh 5vw 0 5vw;
+  }
 }
 
 h2 {

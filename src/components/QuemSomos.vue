@@ -25,6 +25,9 @@ export default {
 <style scoped lang="scss">
 .hello {
   width: 640px;
+  @media (max-width: 640px) {
+    width: 80vw;
+  }
 }
 h1 {
   font-family: "Antic Slab", serif;

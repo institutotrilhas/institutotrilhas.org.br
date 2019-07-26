@@ -7,11 +7,14 @@
 </template>
 
 
-<style scoped>
+<style scoped <style lang="scss" scoped>
 .home {
   margin-top: 10vh;
   margin-left: 20vw;
   display: grid;
+  @media (max-width: 640px) {
+    margin: 10vh 10vw;
+  }
 }
 </style>
 
