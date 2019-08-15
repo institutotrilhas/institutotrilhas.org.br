@@ -3,7 +3,7 @@
     <div class="postcard" v-for="evento in fields.eventos" :key="evento.id">
       <a :href="/#/ + 'eventos/' + evento.uid">
         <div class="postcard-img">
-          <img :src="evento.data.imagem_do_evento.url" alt />
+          <img :src="evento.data.imagem.url" alt />
         </div>
         <div class="postcard-texto">
           <h3>{{ evento.data.titulo[0].text }}</h3>
@@ -37,6 +37,7 @@ export default {
         .then(response => {
           console.log(response);
           this.fields.eventos = response.results;
+          console.log(this.fields.eventos);
         });
     }
   },

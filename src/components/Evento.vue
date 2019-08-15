@@ -40,7 +40,7 @@ export default {
             }
           );
           this.fields.texto = document.data.texto;
-          this.fields.imagem = document.data.imagem_do_evento;
+          this.fields.imagem = document.data.imagem;
         });
     }
   },
