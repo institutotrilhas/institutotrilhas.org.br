@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <QuemSomos msg="quem somos e o que fazemos" />
-    <!-- <Atividades /> -->
+    <Atividades />
     <Equipe />
   </div>
 </template>

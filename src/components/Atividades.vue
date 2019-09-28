@@ -2,31 +2,15 @@
   <div id="ativ">
     <h2>atividades</h2>
     <div class="ativ-lista">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img
-                src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
-                alt
-              />
-            </li>
-            <li class="glide__slide">
-              <img src="http://fillmurray.com/500/500" alt />
-            </li>
-            <li class="glide__slide">
-              <img
-                src="https://images.pexels.com/photos/2583850/pexels-photo-2583850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=500"
-                alt
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-        </div>
-      </div>
+      <Atividade index="0" />
+      <Atividade index="1" />
+      <Atividade index="2" />
+      <Atividade index="3" />
+      <Atividade index="4" />
+      <Atividade index="5" />
+      <Atividade index="6" />
+      <Atividade index="7" />
+      <Atividade index="8" />
     </div>
   </div>
 </template>
@@ -41,9 +25,14 @@
   border: 1px solid lightgrey;
   border-radius: 16px;
   width: 742px;
-  height: 360px;
-  background-color: #fff;
+  // height: 360px;
+  background-color: white;
   overflow: hidden;
+  padding: 2vh 0;
+  @media (max-width: 640px) {
+    width: 70vw;
+    padding: 5vh 5vw 0 5vw;
+  }
 }
 
 h2 {
@@ -61,7 +50,12 @@ h2 {
 
 
 <script>
+import Atividade from "./Atividade.vue";
+
 export default {
-  name: "Atividades"
+  name: "Atividades",
+  components: {
+    Atividade
+  }
 };
 </script>
