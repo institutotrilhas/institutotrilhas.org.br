@@ -1,5 +1,16 @@
 <template>
   <div class="atividade">
+    <div class="a-thumb">
+      <img v-if="this.index == 0" src="@/assets/1_trilhas_urbanas.jpg" alt />
+      <img v-if="this.index == 1" src="@/assets/2_trilhas_biomas.jpg" alt />
+      <img v-if="this.index == 2" src="@/assets/3_trilhas teatrais.jpg" alt />
+      <img v-if="this.index == 3" src="@/assets/4_trilhas_etnobotanicas.jpg" alt />
+      <img v-if="this.index == 4" src="@/assets/5_planejamento_trilhas_2.jpg" alt />
+      <img v-if="this.index == 5" src="@/assets/6_curso_formacao_2.jpg" alt />
+      <img v-if="this.index == 6" src="@/assets/7_oficinas_1.jpg" alt />
+      <img v-if="this.index == 7" src="@/assets/8_projetos_conexao_arte_meio_ambiente.jpg" alt />
+      <img v-if="this.index == 8" src="@/assets/9_contacao_historias.jpg" alt />
+    </div>
     <div class="a-titulo">
       <h3>{{ conteudo[this.index].titulo }}</h3>
       <button @click="toggle">{{ expandir ? "▼" : "▲" }}</button>
@@ -125,15 +136,19 @@ export default {
 
 <style lang="scss" scoped>
 .atividade {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0 5vw;
+  padding: 2vh 2vw 2vh 5vw;
+  align-items: center;
   h3 {
     font-family: "Antic", sans-serif;
     font-weight: 400;
-    color: #b4cf8b;
+    color: #6d8d3c;
   }
   .a-titulo {
     display: flex;
+    margin-left: 2vw;
     button {
       padding: 0 20px;
       border: none;
@@ -143,9 +158,18 @@ export default {
       outline: none;
     }
   }
-  border-bottom: 0.5px solid #ddd;
-  &:last-child {
-    border-bottom: none;
+  .a-descricao {
+    margin-top: 1.5vh;
+  }
+  .a-thumb {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      max-width: 125%;
+      min-height: 100%;
+    }
   }
 }
 
