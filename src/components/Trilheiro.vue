@@ -29,8 +29,7 @@
   }
 }
 img {
-  height: 100px;
-  border-radius: 50%;
+  width: 100px;
   grid-area: perfil;
 }
 h3 {
