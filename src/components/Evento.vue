@@ -56,5 +56,6 @@ export default {
 <style lang="scss" scoped>
 img {
   width: 30vw;
+  border-radius: 50%;
 }
 </style>
