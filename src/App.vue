@@ -41,7 +41,7 @@
           </form>
         </div>
       </div>
-      <p class="legenda">Todos os direitos reservados © Instituto Trilhas, 2019.</p>
+      <p class="legenda">Todos os direitos reservados © Instituto Trilhas, 2020.</p>
     </div>
   </div>
 </template>
