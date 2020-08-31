@@ -6,8 +6,7 @@
   </div>
 </template>
 
-
-<style scoped <style lang="scss" scoped>
+<style scoped lang="scss">
 .home {
   margin-top: 10vh;
   margin-left: 20vw;

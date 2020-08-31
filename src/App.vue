@@ -53,7 +53,7 @@ export default {
       window.scroll(0, 1632);
     },
     rolarEquipe() {
-      window.scroll(0, 2000);
+      window.scroll(0, 4000);
     }
   }
 };
