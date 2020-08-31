@@ -30,7 +30,7 @@
 }
 img {
   width: 100px;
-  border-radius: 50px;
+  border-radius: 100px;
   grid-area: perfil;
 }
 h3 {
