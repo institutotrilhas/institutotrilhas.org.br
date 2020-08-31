@@ -139,7 +139,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 2vh 2vw 2vh 5vw;
+  padding: 2vh 2vw 2vh 2vw;
   align-items: center;
   h3 {
     font-family: "Antic", sans-serif;
