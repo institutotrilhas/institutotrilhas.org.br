@@ -30,6 +30,7 @@
 }
 img {
   width: 100px;
+  height: 100px;
   border-radius: 50%;
   grid-area: perfil;
 }
