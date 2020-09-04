@@ -53,9 +53,13 @@ export default {
       window.scroll(0, 1632);
     },
     rolarEquipe() {
-      window.scroll(0, 3300);
-    }
-  }
+      if (window.innerHeight < 1060) {
+        window.scroll(0, 2900);
+      } else {
+        window.scroll(0, 3300);
+      }
+    },
+  },
 };
 </script>
 
